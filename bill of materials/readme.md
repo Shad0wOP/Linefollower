@@ -8,8 +8,8 @@
 |         3|  H-Brug  |            |           |              |   1   |         |
 |         4|   Sensor |     QTR-8A       |           |              |   1   |         |
 |         5|   Microcontroller   |     ESP32       |           |              |   1   |         |
-|         6|    |            |           |              |      |         |
-|         7|    |            |           |              |      |         |
-|         8|    |            |           |              |      |         |
+|         6|  Wielen  |            |           |              |   2   |         |
+|         7|  Batterijhouder  |            |           |              |   1   |         |
+|         8|   Batterijoplader |            |           |              |   1   |         |
 |         9|    |            |           |              |      |         |
 |        10|    |            |           |              |      |         |
