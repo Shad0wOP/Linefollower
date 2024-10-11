@@ -3,7 +3,7 @@
 
 |volgnummer|naam|omschrijving|nieuw/recup|kostprijs/stuk|aantal|subtotaal|
 |----------|----|------------|-----------|---------|------|---------|
-|         1| Motor|            |     nieuw      |              |   2   |         |
+|         1| Motor|    Gearmotor 6V        |     nieuw      |              |   2   |         |
 |         2|   Batterij |   18650         |    Nieuw       |              |   2   |         |
 |         3|  H-Brug  |            |      Nieuw     |              |   1   |         |
 |         4|   Sensor |     QTR-8A       |     Nieuw      |              |   1   |         |
