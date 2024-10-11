@@ -11,5 +11,5 @@
 |         6|  Wielen  |            |     Nieuw      |              |   2   |         |
 |         7|  Batterijhouder  |            |     Nieuw      |              |   1   |         |
 |         8|   Batterijoplader |            |         Nieuw  |              |   1   |         |
-|         9|  Led  |            |      Recup     |              |      |         |
-|        10|   Drukknop |            |      Recup     |              |      |         |
+|         9|  Led  |            |      Recup     |              |   1   |         |
+|        10|   Drukknop |            |      Recup     |              |    1  |         |
