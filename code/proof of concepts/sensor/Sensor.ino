@@ -1,4 +1,4 @@
-int Array[8] = {A7, A6, A5, A4, A3, A2, A1, A0};
+int Array[8] = {14, 27, 26, 25, 33, 32, 35, 34};
 int waarde;
 
 void setup() {
