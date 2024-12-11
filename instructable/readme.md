@@ -4,3 +4,62 @@ Een instructable is een stappenplan - zonder verdere uitleg - hoe je vertrekkend
 
 ### stap 1
 bestel alle componenten uit de bill of materials  
+
+### Stap 2: Chassis Montage
+Bevestig de motoren op het chassis met schroeven.
+Monteer de wielen op de motorassen.
+Plaats de batterijhouder op het chassis.
+Monteer de lijnvolgsensoren aan de voorkant van het chassis (ongeveer 1 cm boven de grond).
+Bevestig de motor driver module en ESP32 module op het chassis met dubbelzijdige tape of schroeven.
+
+### Stap 3: Elektrische Verbindingen
+Motor driver module:
+Verbind de motoren met de uitgangspinnen van de motor driver (bijv. OUT1, OUT2 voor motor 1 en OUT3, OUT4 voor motor 2).
+Verbind de voedingspinnen van de motor driver met de batterij (+ naar VCC, − naar GND).
+Verbind de IN-pinnen van de motor driver met GPIO-pinnen van de ESP32.
+
+Lijnvolgsensoren:
+Verbind de VCC en GND van de sensoren met de 3.3V en GND van de ESP32.
+Verbind de signaalpinnen van de sensoren met analoge GPIO-pinnen van de ESP32.
+
+ESP32 voeding:
+Sluit de ESP32 aan via de USB-poort of een aparte 3.3V-voeding van de batterij.
+Bluetooth:
+Geen extra bekabeling nodig voor Bluetooth-functionaliteit (geïntegreerd in ESP32).
+
+### Stap 4: Software Installatie
+ESP32 configureren in Arduino IDE:
+Open de Arduino IDE.
+Ga naar Tools > Board > Board Manager en installeer de ESP32-bibliotheek.
+
+Bibliotheken installeren:
+Installeer de benodigde bibliotheken:
+QTRSensors (voor lijnvolgsensoren, indien nodig)
+BluetoothSerial (voor Bluetooth-functionaliteit).
+
+Code uploaden:
+Sluit de ESP32 aan op de computer via een USB-kabel.
+Selecteer de juiste boardinstellingen:
+Board: ESP32 Dev Module
+Port: (selecteer de juiste COM-poort)
+Upload de code
+
+Bluetooth testen:
+Verbind met de ESP32 via Bluetooth vanaf een smartphone of computer.
+Test de communicatie door gegevens te verzenden en te ontvangen.
+
+### Stap 5: Functionele Test
+Sluit de batterij aan op de motor driver en ESP32.
+Zet de schakelaar aan.
+Plaats de robot op een zwart-witte lijn.
+Controleer of de robot de lijn correct volgt.
+Pas indien nodig de drempelwaarden (“THRESHOLD”) en motordraaipatronen in de code aan.
+
+### Stap 6: Fijnafstelling en Optimalisatie
+Optimaliseer de snelheid door de PWM-signalen voor de motoren te implementeren.
+Verbeter de lijnvolging door gebruik te maken van PID-regeling in de code.
+Voeg Bluetooth-functionaliteit toe om parameters zoals snelheid en gevoeligheid in real-time aan te passen.
+
+
+Je linefollower robot is nu klaar!
+
