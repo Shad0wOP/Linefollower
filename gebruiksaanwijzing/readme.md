@@ -51,9 +51,9 @@ Deze waardes worden dan gebruikt om te vergelijken met de huidig gedetecteerd op
 
 ### settings
 De robot rijdt stabiel met volgende parameters
-Cycletime: 600
-Power: 200
-Diff: 0,4
-Kp: 30
-Ki: 0
-Kd: 0,3
+- Cycletime: 600
+- Power: 200
+- Diff: 0,4
+- Kp: 30
+- Ki: 0
+- Kd: 0,3
