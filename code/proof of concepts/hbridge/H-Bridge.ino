@@ -1,147 +1,79 @@
-#include <Arduino.h>
+// Definieer de pinnen voor de DRV8833
+const int motorA_in1 = 16; // IN1
+const int motorA_in2 = 17; // IN2
+const int motorB_in1 = 18; // IN3
+const int motorB_in2 = 19; // IN4
 
-#define SerialPort Serial
-#define Baudrate 115200
-
-//Pins Instellen
-const int motor1PWM1 = 16;  //PWM pin for motor 1 driver input 1
-const int motor1PWM2 = 17;  //PWM pin for motor 1 driver input 2
-const int motor2PWM1 = 18;  //PWM pin for motor 2 driver input 1
-const int motor2PWM2 = 19;  //PWM pin for motor 2 driver input 2
-const int delayTime = 25;   //Delay in milliseconds between each step
-
-
-void motor1CW();
-void motor1CCW();
-void motor2CW();
-void motor2CCW();
-void samenC();
-
-void setup() 
-{
-  //Seriële Poort
-  SerialPort.begin(Baudrate);
-  delay(100);
-
-  pinMode(motor1PWM1, OUTPUT);
-  pinMode(motor1PWM2, OUTPUT);
-  pinMode(motor2PWM1, OUTPUT);
-  pinMode(motor2PWM2, OUTPUT);
+void setup() {
+  // Stel de pinnen in als output
+  pinMode(motorA_in1, OUTPUT);
+  pinMode(motorA_in2, OUTPUT);
+  pinMode(motorB_in1, OUTPUT);
+  pinMode(motorB_in2, OUTPUT);
 }
 
-void loop() 
-{   
-  if (Serial.available()) { 
-    String command = Serial.readStringUntil('\n');
+void loop() {
+  // Voorbeeld: motor A vooruit en motor B achteruit met PWM
+  driveMotorA(255); // Volle snelheid vooruit
+  driveMotorB(128); // Halve snelheid achteruit
 
-    if (command == "M1") {
-      Serial.println("Motor 1 Clockwise");
-      motor1CW();
-    } 
-    else if (command == "O2") {
+  delay(2000); // Draai 2 seconden
 
-      Serial.println("Motor 2 Clockwise");
-      motor2CW();
-    } 
-    else if (command == "A1") {
+  // Stop alle motoren
+  stopMotors();
+  delay(1000); // Wacht 1 seconde
 
-      Serial.println("Motor 1 Counterclockwise");
-      motor1CCW();
-    } 
-    else if (command == "B2") {
+  // Voorbeeld: motor A achteruit en motor B vooruit met PWM
+  driveMotorA(-128); // Halve snelheid achteruit
+  driveMotorB(255); // Volle snelheid vooruit
 
-      Serial.println("Motor 2 Counterclockwise");
-      motor2CCW();
-    }
-    else if (command == "SA") {
+  delay(2000); // Draai 2 seconden
 
-      Serial.println("Motoren Werken Samen Clockwise");
-      samenC();
-    }
+  // Stop alle motoren
+  stopMotors();
+  delay(1000); // Wacht 1 seconde
+}
+
+// Functie om motor A aan te sturen
+void driveMotorA(int speed) {
+  if (speed > 0) {
+    analogWrite(motorA_in1, speed);
+    analogWrite(motorA_in2, 0);
+  } else if (speed < 0) {
+    analogWrite(motorA_in1, 0);
+    analogWrite(motorA_in2, -speed);
+  } else {
+    stopMotorA();
   }
 }
 
-
-void motor1CW()
-{
-  for (int speed = 40; speed <= 125; speed++)
-  {
-    analogWrite(motor1PWM1, 0);
-    analogWrite(motor1PWM2, speed);
-    delay(delayTime);
-  }
-  for (int speed = 125; speed >= 30; speed--) 
-  {
-    analogWrite(motor1PWM1, 0);
-    analogWrite(motor1PWM2, speed);
-    delay(delayTime);
+// Functie om motor B aan te sturen
+void driveMotorB(int speed) {
+  if (speed > 0) {
+    analogWrite(motorB_in1, speed);
+    analogWrite(motorB_in2, 0);
+  } else if (speed < 0) {
+    analogWrite(motorB_in1, 0);
+    analogWrite(motorB_in2, -speed);
+  } else {
+    stopMotorB();
   }
 }
 
-void motor2CW()
-{
-  for (int speed = 40; speed <= 125; speed++)
-  {
-    analogWrite(motor2PWM1, 0);
-    analogWrite(motor2PWM2, speed);
-    delay(delayTime);
-  }
-  for (int speed = 125; speed >= 30; speed--) 
-  {
-    analogWrite(motor2PWM1, 0);
-    analogWrite(motor2PWM2, speed);
-    delay(delayTime);
-  }
+// Functie om motor A te stoppen
+void stopMotorA() {
+  analogWrite(motorA_in1, 0);
+  analogWrite(motorA_in2, 0);
 }
 
-void motor1CCW()
-{
-  for (int speed = 40; speed <= 125; speed++)
-  {
-    analogWrite(motor1PWM1, speed);
-    analogWrite(motor1PWM2, 0);
-    delay(delayTime);
-  }
-  for (int speed = 125; speed >= 30; speed--) 
-  {
-    analogWrite(motor1PWM1, speed);
-    analogWrite(motor1PWM2, 0);
-    delay(delayTime);
-  }
+// Functie om motor B te stoppen
+void stopMotorB() {
+  analogWrite(motorB_in1, 0);
+  analogWrite(motorB_in2, 0);
 }
 
-void motor2CCW()
-{
-  for (int speed = 40; speed <= 125; speed++)
-  {
-    analogWrite(motor2PWM1, speed);
-    analogWrite(motor2PWM2, 0);
-    delay(delayTime);
-  }
-  for (int speed = 125; speed >= 30; speed--) 
-  {
-    analogWrite(motor2PWM1, speed);
-    analogWrite(motor2PWM2, 0);
-    delay(delayTime);
-  }
-}
-
-void samenC()
-{
-  for (int speed = 40; speed <= 125; speed++)
-  {
-    analogWrite(motor1PWM1, 0);
-    analogWrite(motor1PWM2, speed);
-    analogWrite(motor2PWM1, 0);
-    analogWrite(motor2PWM2, speed);
-    delay(delayTime);
-  }
-  for (int speed = 125; speed >= 30; speed--) 
-  {
-    analogWrite(motor1PWM1, 0);
-    analogWrite(motor1PWM2, speed);
-    analogWrite(motor2PWM1, 0);
-    analogWrite(motor2PWM2, speed);
-    delay(delayTime);
-  }
+// Functie om alle motoren te stoppen
+void stopMotors() {
+  stopMotorA();
+  stopMotorB();
 }
