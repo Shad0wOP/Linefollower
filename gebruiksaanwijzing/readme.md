@@ -22,14 +22,23 @@ Test de communicatie door een eenvoudige opdracht naar de robot te sturen en con
 
 #### commando's
 debug Stuurt alle ingestelde parameters en berekende calculation time terug.
+
 run Start of stopt de robot.
+
 set cycle [µs] Stelt de cycle time in van de robot.
+
 set power [0..255] Stelt de maximum power van de robot in.
-set diff [0..1] Stelt de verschil in power tussen de motoren in bochten
+
+set diff [0..1] Stelt de verschil in power tussen de motoren in bochten.
+
 set kp [0..] Stelt de propertionele correctie van de fout in.
+
 set ki [0..] Stelt de integrale correctie van de fout in.
+
 set kd [0..] Stelt de differentiële correctie van de fout in.
+
 calibrate black Stelt de waardes gelezen door de sensor in als zwart.
+
 calibrate white Stelt de waardes gelezen door de sensor in als wit.
 
 ### kalibratie
