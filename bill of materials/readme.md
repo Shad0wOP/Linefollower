@@ -1,16 +1,25 @@
 ## bill of materials
 <br />
 
-|volgnummer|naam|omschrijving|nieuw/recup|kostprijs/stuk|aantal|subtotaal|
+|volgnummer|naam|omschrijving|nieuw/recup|kostprijs/stuk (euro)|aantal|subtotaal (euro)|
 |----------|----|------------|-----------|---------|------|---------|
-|       1| QTR-8A reflectance sensor array- analog - Pololu 960   | line following sensor           |  nieuw         |    €10          |  1    |   €10        |
-|         2| Oogje|Oogje voor onder de QTR8-A te plakken|recup|€0| 1| €0| 
-|         3| 18650 Acculader 1/2/4 Sleuven Dual 18650 Opladen 3.7V Oplaadbare Lithium Batterij Usb Oplader Voor 16340 14500 18650 26650 | baterij oplader| nieuw|€0.93|1|€0.93| 
-|         4|GA12-N20 Tandwielmotor Dc 3V/6V/12V N20 Mini Micro Metalen Tandwielmotor Met Tandwiel Dc Motoren 15/30/50/60/100/200/300/500/1000Rpm|DC motoren|nieuw|€3.41| 2| €6.28|
-|         5|Drukknop|SMD drukknop |nieuw|€0.93|1|€0.93|
-|          6|10 Stks/partij D-Hole Rubber Wiel Geschikt Voor N20 Motor D As Band Auto Robot Diy Speelgoed Onderdelen|wielen voor motor|nieuw|€0.93 |1|€0.93 |
-|          7|1 2 3 4 Slot Diy Batterijen Clip Houder Container Plastic 18650 Houder Doos Met Draad Lood Zwart Voor 18650 3.7V Batterij|batterij houder voor 2 baterijen|nieuw|€0.96|1|€0.96|
-|          9|1-10PCS/ESP32 Development Board Type-C CP2102 WIFI Bluetooth Module Dual Core Draadloze Module ESP-WROOM-32 Uitbreidingskaart 38Pin|microcontroler ESP32|nieuw|€4.82|1|€4.82|
-|          10|1-10 Stuks Drv8833 Motor Aandrijfmodule 1.5a Dual H Brug Dc Versnelling Motor Driver Controller Board Diy Kit|H brug DRV8833|nieuw|€5.41|1|€5.41|
-|          12|||||||
-|          13|Dupont Lijn 10/20/30/40Cm 40pin Mannelijk Naar Mannelijk + Mannelijk Naar Vrouwelijk En Vrouwelijk Naar Vrouwelijk Jumper Draad Dupont Kabel Voor Arduino Diy Kit|extra wires|nieuw|€2.03|1|€2.03|
+|         1|PCB auto|5st            |nieuw|7.8|1|7.8|
+|2|batterijhouder|18650 Batterijhouder voor Printplaat|nieuw|1.24|2|2.48|
+|3|DRV8833|Bipolaire Stappenmotor- en DC-Motoraansturing|nieuw|2.48|1|2.48|
+|4|zekering|Zelfherstellende zekering PPTC 2000mA|nieuw|1.07|1|1.07|
+|5|SMD Weerstanden|1Ω-10MΩ 0805 SMD Weerstanden Set|nieuw|6.61|1|6.61|
+|6|SMD condensator|SMD condensator 100nF per 10st 0805|nieuw|1.21|1|1.21|
+|7|female header pin|Rechte header - 1x40 pin - P = 2,54|nieuw|1.5|3|4.5|
+|8|male header pin|40 Pins header Male 2.54|nieuw|0.33|1|0.33|
+|9|QTR-8A|Pololu QTR-8A Reflectiesensor Array|nieuw|11.47|1|11.47|
+|10|SMD Tact Switch|SMD Tact Switch Horizontal 4,3mm 1,6N 6,2x6,2mm|nieuw|0.46|2|0.92|
+|11|GA12-N20 Tandwielmotor|Dc 3V/6V/12V N20 Mini Micro Metalen Tandwielmotor Met Tandwiel Dc Motoren 1:50|nieuw|3.41|2|6.28|
+|12|Wiel Voor N20 Motor|10 Stks/partij D-Hole Rubber Wiel Geschikt Voor N20 Motor D As|nieuw|0.93|1|0.93
+|13|ESP32 Development Board|1-10PCS/ESP32 Development Board Type-C CP2102 WIFI Bluetooth Module Dual Core Draadloze Module ESP-WROOM-32 Uitbreidingskaart 38Pin|nieuw|4.82|1|4.82|
+|14|dupont draadjes|Dupont Lijn 10/20/30/40Cm 40pin Mannelijk Naar Mannelijk + Mannelijk Naar Vrouwelijk En Vrouwelijk Naar Vrouwelijk Jumper Draad Dupont Kabel Voor Arduino Diy Kit|nieuw|2.03|1|2.03|
+|15|bout|bout m3|recup| |4| |
+|16|moer|moer m3|recup| |4| |
+|17|3D print||school||1||
+|18|oogje|verhoog voor onder sensor|recup||1||
+|19|Volt regulator|LF33CV Volt regulator|nieuw|0.82|1|0.82|
+|20|Balast vooraan||recup||||
