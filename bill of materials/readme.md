@@ -4,7 +4,7 @@
 |volgnummer|naam|omschrijving|nieuw/recup|kostprijs/stuk|aantal|subtotaal|
 |----------|----|------------|-----------|---------|------|---------|
 |       1| QTR-8A reflectance sensor array- analog - Pololu 960   | line following sensor           |  nieuw         |    €10          |  1    |   €10        |
-|         2| zelfklevend zwenkwiel|24-4 Stuks Zelfklevende Zwenkwielen 360 Graden Rotatie Zwenkwielen Mini Wielen Voor Het Verplaatsen Van Meubelen Caster Katrol|nieuw|0,93| 1| €0.93| 
+|         2| Oogje|Oogje voor onder de QTR8-A te plakken|nieuw|0,93| 1| €0.93| 
 |         3| 18650 Acculader 1/2/4 Sleuven Dual 18650 Opladen 3.7V Oplaadbare Lithium Batterij Usb Oplader Voor 16340 14500 18650 26650 | baterij oplader| nieuw|€0.93|1|€0.93| 
 |         4|GA12-N20 Tandwielmotor Dc 3V/6V/12V N20 Mini Micro Metalen Tandwielmotor Met Tandwiel Dc Motoren 15/30/50/60/100/200/300/500/1000Rpm|DC motoren|nieuw|€3.41| 2| €6.28|
 |         5|Micro Schuifschakelaar Spdt 3 Pin 5 Posities Mini Ss12f15 Ss12f44 1p2t 3Mm 4Mm 5Mm 6Mm kleine Toggle Pcb Mount Terminal Voor Arduino|schuifschakelaar|nieuw|€0.93|1|€0.93|
