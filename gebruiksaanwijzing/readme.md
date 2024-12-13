@@ -10,15 +10,7 @@ Zorg dat de batterijen in de correcte oriëntatie in de batterijhouder gestoken 
 ### draadloze communicatie
 Maak gebruik van een ESP32 module, deze heeft standaard bluetooth en Wifi.
 #### verbinding maken
-Verbinding maken met Bluetooth:
-Zet de robot aan en zorg ervoor dat de ESP32 module is ingeschakeld.
-Zoek op je smartphone naar Bluetooth-apparaten.
-Selecteer "Naam linefollower" uit de lijst van beschikbare apparaten.
-
-Controleer de verbinding:
-Gebruik een terminal-app zoals Serial Bluetooth Terminal op Android om gegevens te verzenden/ontvangen.
-Test de communicatie door een eenvoudige opdracht naar de robot te sturen en controleer of deze correct reageert.
-
+Zet de bluetooth van je gsm aan en verbind met de auto. Open de bluetooth serial terminal app en verbind nu via deze app met de auto. Je kan nu via het tekstvak commando's versturen naar de auto.
 
 #### commando's
 debug Stuurt alle ingestelde parameters en berekende calculation time terug.
