@@ -13,25 +13,17 @@ Maak gebruik van een ESP32 module, deze heeft standaard bluetooth en Wifi.
 Zet de bluetooth van je gsm aan en verbind met de auto. Open de bluetooth serial terminal app en verbind nu via deze app met de auto. Je kan nu via het tekstvak commando's versturen naar de auto.
 
 #### commando's
-debug Stuurt alle ingestelde parameters en berekende calculation time terug.
-
-run Start of stopt de robot.
-
-set cycle [µs] Stelt de cycle time in van de robot.
-
-set power [0..255] Stelt de maximum power van de robot in.
-
-set diff [0..1] Stelt de verschil in power tussen de motoren in bochten.
-
-set kp [0..] Stelt de propertionele correctie van de fout in.
-
-set ki [0..] Stelt de integrale correctie van de fout in.
-
-set kd [0..] Stelt de differentiële correctie van de fout in.
-
-calibrate black Stelt de waardes gelezen door de sensor in als zwart.
-
-calibrate white Stelt de waardes gelezen door de sensor in als wit.
+- debug / geeft een lijst van ingestelde parameters
+- run aan / zorgt ervoor dat de auto begint te rijden
+- run uit / zorgt ervoor dat de auto stopt met rijden
+- set cycle [µs] / bepaald de cyclustijd. deze moet altijd 1.5 tot 2x groter zijn dan de calculation time
+- set power [0..255] / bepaalt de snelheid van de auto
+- set diff [0..1] / bepaald of de auto versneld (> 0.5) of vertraagd (< 0.5) in de bochten.
+- set kp [0..] / bepaald de kp waarde van de pid regelaar
+- set ki [0..] / bepaald de ki waarde van de pid regelaar
+- set kd [0..] / bepaald de kd waarde van de pid regelaar
+- calibrate black / de sensoren worden gekalibreerd op de zwartwaarden
+- calibrate white / de sensoren worden gekalibreerd op de witwaarden
 
 ### kalibratie
 uitleg kalibratie
