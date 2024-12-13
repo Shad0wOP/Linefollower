@@ -2,13 +2,12 @@
 
 Een instructable is een stappenplan - zonder verdere uitleg - hoe je vertrekkend van de bill of materials en gebruik makend van de technische tekeningen de robot kan nabouwen. Ook de nodige stappen om de microcontroller te compileren en te uploaden staan beschreven.  
 
-### Stap 1
+### stap 1
 Bestel alle componenten uit de bill of materials  
 
 ### Stap 2: Chassis Montage
-- Soldeer de female header pins voor de ESP32 in het midden op de onderkant van de printplaat en de pins voor de QTR8-A vooraan op de onderkant.
-- Soldeer de female header pins voor de DRV8833 op de bovenkant van de printplaat.
-- Connecteer de QTR8-A en DRV-8833 op de printplaat door middel van Female header pins.
+- Soldeer de female header pinns voor de ESP32 op de onderkant van de printplaat.
+- Soldeer de QTR8-A en DRV-8833 op de printplaat door middel van Female header pinns.
 - Soldeer de drukknoppen, condensatoren, weerstanden, en Voltregulator op de printplaat alvorens je de batterijhouder erop soldeert.
 - Soldeer de batterijhouder op het chassis.
 - Bevestig de motoren op het chassis met schroeven door middel van een 3D-print houder.
@@ -18,38 +17,36 @@ Bestel alle componenten uit de bill of materials
 - Bevestig de motor driver module en ESP32 module op het chassis .
 
 ### Stap 3: Elektrische Verbindingen
-#### Motor driver module
+#### Motor driver module:
 Verbind de Dupont draadjes met de female header pinns gesoldeerd op J1-MotorL en J2-MotorR.
 
-#### Lijnvolgsensoren
+#### Lijnvolgsensoren:
 Maak een loop op de 3.3V bypass 
 
 ### Stap 4: Software Installatie
-#### ESP32 configureren in Arduino IDE
-Open de Arduino IDE.
-Ga naar Tools > Board > Board Manager en installeer de ESP32-bibliotheek.
+#### ESP32 configureren in Arduino IDE:
+- Open de Arduino IDE.
+- Ga naar Tools > Board > Board Manager en installeer de ESP32-bibliotheek.
 
-#### Bibliotheken installeren
+#### Bibliotheken installeren:
 SerialCommand (Steven Cogswell).
 
-#### Code uploaden
-Sluit de ESP32 aan op de computer via een USB-kabel.
-Selecteer de juiste boardinstellingen:
-Board: ESP32 Dev Module
-Port: (selecteer de juiste COM-poort)
-Upload de code
+#### Code uploaden:
+- Sluit de ESP32 aan op de computer via een USB-kabel.
+- Selecteer de juiste boardinstellingen:
+- Board: ESP32 Dev Module
+- Port: (selecteer de juiste COM-poort)
+- Upload de code
 
-#### Bluetooth testen
-Verbind met de ESP32 via Bluetooth vanaf een smartphone of computer.
-Test de communicatie door gegevens te verzenden en te ontvangen.
+#### Bluetooth testen:
+- Verbind met de ESP32 via Bluetooth vanaf een smartphone of computer.
+- Test de communicatie door gegevens te verzenden en te ontvangen.
 
 ### Stap 5: Functionele Test
-Sluit de batterij aan op de batterijhouders.
-Plaats de robot op het zwarte vlak en calibreer, plaat de robot op Wit en calibreer.
-Plaats de robot op een zwart-witte lijn.
-Controleer of de robot de lijn correct volgt.
-
-
+- Sluit de batterij aan op de batterijhouders.
+- Plaats de robot op het zwarte vlak en calibreer, plaat de robot op Wit en calibreer.
+- Plaats de robot op het parcour.
+- Controleer of de robot de lijn correct volgt.
 
 
 Je linefollower robot is nu klaar!
