@@ -1,9 +1,10 @@
 # Gebruiksaanwijzing
 
 ### opladen / vervangen batterijen
-Opladen:
+#### Opladen
 Dit zijn li-ion batterijen van het type 18650. Deze batterijen laad je best op voor een sessie. Wanneer tijdens een sessie een verminderde prestatie wordt geleverd kan je dan ook best de batterijen opladen. Hiervoor heb je een speciale oplader nodig
-Vervangen:
+
+#### Vervangen
 Verwijder de batterij voorzichtig uit de houder en plaats een nieuwe.
 Zorg dat de batterijen in de correcte oriëntatie in de batterijhouder gestoken worden. 
 
