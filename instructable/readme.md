@@ -31,7 +31,7 @@ Ga naar Tools > Board > Board Manager en installeer de ESP32-bibliotheek.
 
 Bibliotheken installeren:
 Installeer de benodigde bibliotheken:
-SerialCommand (Steven Cogswell.
+SerialCommand (Steven Cogswell).
 
 Code uploaden:
 Sluit de ESP32 aan op de computer via een USB-kabel.
