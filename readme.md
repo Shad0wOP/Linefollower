@@ -7,21 +7,20 @@ lege repository die je als template kan gebruiken om een eigen repository te sta
   
 ## specifications
 
-microcontroller:
+microcontroller: esp32 wroom 38 pin
 
-motors: 
+motors: n20 1:50
 
-h-bridge:
+h-bridge: drv8833
 
-sensors:
+sensors: qtr-8a
 
-batteries:
+batteries: 18650 
 
-wireless communication:
+wireless communication: ingebouwt in microcontroller
 
-distance sensor - motors:
+distance sensor - motors: 98 mm
 
 weight:
 
-speed: 
-
+speed: 0.68 m/s
