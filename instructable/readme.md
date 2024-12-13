@@ -6,15 +6,16 @@ Een instructable is een stappenplan - zonder verdere uitleg - hoe je vertrekkend
 Bestel alle componenten uit de bill of materials  
 
 ### Stap 2: Chassis Montage
-Soldeer de female header pinns voor de ESP32 op de onderkant van de printplaat.
-Soldeer de QTR8-A en DRV-8833 op de printplaat door middel van Female header pinns.
-Soldeer de drukknoppen, condensatoren, weerstanden, en Voltregulator op de printplaat alvorens je de batterijhouder erop soldeert.
-Soldeer de batterijhouder op het chassis.
-Bevestig de motoren op het chassis met schroeven door middel van een 3D-print houder.
-Soldeer aan de motoren dupont draadjes
-Monteer de wielen op de motorassen.
-Monteer de lijnvolgsensoren aan de voorkant van het chassis en plak het oogje achter de sensoren zodat deze niet op het papier hangen.
-Bevestig de motor driver module en ESP32 module op het chassis .
+- Soldeer de female header pins voor de ESP32 in het midden op de onderkant van de printplaat en de pins voor de QTR8-A vooraan op de onderkant.
+- Soldeer de female header pins voor de DRV8833 op de bovenkant van de printplaat.
+- Connecteer de QTR8-A en DRV-8833 op de printplaat door middel van Female header pins.
+- Soldeer de drukknoppen, condensatoren, weerstanden, en Voltregulator op de printplaat alvorens je de batterijhouder erop soldeert.
+- Soldeer de batterijhouder op het chassis.
+- Bevestig de motoren op het chassis met schroeven door middel van een 3D-print houder.
+- Soldeer aan de motoren dupont draadjes
+- Monteer de wielen op de motorassen.
+- Monteer de lijnvolgsensoren aan de voorkant van het chassis en plak het oogje achter de sensoren zodat deze niet op het papier hangen.
+- Bevestig de motor driver module en ESP32 module op het chassis .
 
 ### Stap 3: Elektrische Verbindingen
 Motor driver module:
