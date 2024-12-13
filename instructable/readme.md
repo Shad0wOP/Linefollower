@@ -18,29 +18,28 @@ Bestel alle componenten uit de bill of materials
 - Bevestig de motor driver module en ESP32 module op het chassis .
 
 ### Stap 3: Elektrische Verbindingen
-Motor driver module:
+#### Motor driver module
 Verbind de Dupont draadjes met de female header pinns gesoldeerd op J1-MotorL en J2-MotorR.
 
-Lijnvolgsensoren:
+#### Lijnvolgsensoren
 Maak een loop op de 3.3V bypass 
 
 ### Stap 4: Software Installatie
-ESP32 configureren in Arduino IDE:
+#### ESP32 configureren in Arduino IDE
 Open de Arduino IDE.
 Ga naar Tools > Board > Board Manager en installeer de ESP32-bibliotheek.
 
-Bibliotheken installeren:
-Installeer de benodigde bibliotheken:
+#### Bibliotheken installeren
 SerialCommand (Steven Cogswell).
 
-Code uploaden:
+#### Code uploaden
 Sluit de ESP32 aan op de computer via een USB-kabel.
 Selecteer de juiste boardinstellingen:
 Board: ESP32 Dev Module
 Port: (selecteer de juiste COM-poort)
 Upload de code
 
-Bluetooth testen:
+#### Bluetooth testen
 Verbind met de ESP32 via Bluetooth vanaf een smartphone of computer.
 Test de communicatie door gegevens te verzenden en te ontvangen.
 
