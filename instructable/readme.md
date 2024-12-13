@@ -50,10 +50,7 @@ Plaats de robot op het zwarte vlak en calibreer, plaat de robot op Wit en calibr
 Plaats de robot op een zwart-witte lijn.
 Controleer of de robot de lijn correct volgt.
 
-### Stap 6: Fijnafstelling en Optimalisatie
-Optimaliseer de snelheid door de PWM-signalen voor de motoren te implementeren.
-Verbeter de lijnvolging door gebruik te maken van PID-regeling in de code.
-Voeg Bluetooth-functionaliteit toe om parameters zoals snelheid en gevoeligheid in real-time aan te passen.
+
 
 
 Je linefollower robot is nu klaar!
