@@ -6,26 +6,22 @@ Een instructable is een stappenplan - zonder verdere uitleg - hoe je vertrekkend
 bestel alle componenten uit de bill of materials  
 
 ### Stap 2: Chassis Montage
-Bevestig de motoren op het chassis met schroeven.
+Soldeer de female header pinns voor de ESP32 op de onderkant van de printplaat.
+Soldeer de QTR8-A en DRV-8833 op de printplaat door middel van Female header pinns.
+Soldeer de drukknoppen, condensatoren, weerstanden, en Voltregulator op de printplaat alvorens je de batterijhouder erop soldeert.
+Soldeer de batterijhouder op het chassis.
+Bevestig de motoren op het chassis met schroeven door middel van een 3D-print houder.
+Soldeer aan de motoren dupont draadjes
 Monteer de wielen op de motorassen.
-Plaats de batterijhouder op het chassis.
-Monteer de lijnvolgsensoren aan de voorkant van het chassis (ongeveer 1 cm boven de grond).
-Bevestig de motor driver module en ESP32 module op het chassis met dubbelzijdige tape of schroeven.
+Monteer de lijnvolgsensoren aan de voorkant van het chassis en plak het oogje achter de sensoren zodat deze niet op het papier hangen.
+Bevestig de motor driver module en ESP32 module op het chassis .
 
 ### Stap 3: Elektrische Verbindingen
 Motor driver module:
-Verbind de motoren met de uitgangspinnen van de motor driver (bijv. OUT1, OUT2 voor motor 1 en OUT3, OUT4 voor motor 2).
-Verbind de voedingspinnen van de motor driver met de batterij (+ naar VCC, − naar GND).
-Verbind de IN-pinnen van de motor driver met GPIO-pinnen van de ESP32.
+Verbind de Dupont draadjes met de female header pinns gesoldeerd op J1-MotorL en J2-MotorR.
 
 Lijnvolgsensoren:
-Verbind de VCC en GND van de sensoren met de 3.3V en GND van de ESP32.
-Verbind de signaalpinnen van de sensoren met analoge GPIO-pinnen van de ESP32.
-
-ESP32 voeding:
-Sluit de ESP32 aan via de USB-poort of een aparte 3.3V-voeding van de batterij.
-Bluetooth:
-Geen extra bekabeling nodig voor Bluetooth-functionaliteit (geïntegreerd in ESP32).
+Maak een loop op de 3.3V bypass 
 
 ### Stap 4: Software Installatie
 ESP32 configureren in Arduino IDE:
@@ -34,8 +30,7 @@ Ga naar Tools > Board > Board Manager en installeer de ESP32-bibliotheek.
 
 Bibliotheken installeren:
 Installeer de benodigde bibliotheken:
-QTRSensors (voor lijnvolgsensoren, indien nodig)
-BluetoothSerial (voor Bluetooth-functionaliteit).
+SerialCommand (Steven Cogswell.
 
 Code uploaden:
 Sluit de ESP32 aan op de computer via een USB-kabel.
@@ -49,11 +44,10 @@ Verbind met de ESP32 via Bluetooth vanaf een smartphone of computer.
 Test de communicatie door gegevens te verzenden en te ontvangen.
 
 ### Stap 5: Functionele Test
-Sluit de batterij aan op de motor driver en ESP32.
-Zet de schakelaar aan.
+Sluit de batterij aan op de batterijhouders.
+Plaats de robot op het zwarte vlak en calibreer, plaat de robot op Wit en calibreer.
 Plaats de robot op een zwart-witte lijn.
 Controleer of de robot de lijn correct volgt.
-Pas indien nodig de drempelwaarden (“THRESHOLD”) en motordraaipatronen in de code aan.
 
 ### Stap 6: Fijnafstelling en Optimalisatie
 Optimaliseer de snelheid door de PWM-signalen voor de motoren te implementeren.
